@@ -1,0 +1,21 @@
+[tools]
+kind = "latest"
+kubectl = "latest"
+
+[tasks.create]
+description = "Create k8s cluster with `kind`"
+usage = '''
+arg "[name]" help="cluster name" default="local"
+'''
+run = "kind create cluster --name ${usage_name?}"
+
+[tasks.delete]
+description = "Delete a `kind` cluster"
+usage = '''
+arg "[name]" help="cluster name" default="local"
+'''
+run = "kind delete cluster --name ${usage_name?}"
+
+[settings]
+experimental = true
+lockfile = true

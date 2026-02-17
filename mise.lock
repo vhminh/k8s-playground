@@ -1,0 +1,17 @@
+[[tools.kind]]
+version = "0.31.0"
+backend = "aqua:kubernetes-sigs/kind"
+"platforms.linux-arm64" = { checksum = "sha256:8e1014e87c34901cc422a1445866835d1e666f2a61301c27e722bdeab5a1f7e4", url = "https://github.com/kubernetes-sigs/kind/releases/download/v0.31.0/kind-linux-arm64"}
+"platforms.linux-x64" = { checksum = "sha256:eb244cbafcc157dff60cf68693c14c9a75c4e6e6fedaf9cd71c58117cb93e3fa", url = "https://github.com/kubernetes-sigs/kind/releases/download/v0.31.0/kind-linux-amd64"}
+"platforms.macos-arm64" = { checksum = "sha256:88bf554fe9da6311c9f8c2d082613c002911a476f6b5090e9420b35d84e70c5c", url = "https://github.com/kubernetes-sigs/kind/releases/download/v0.31.0/kind-darwin-arm64"}
+"platforms.macos-x64" = { checksum = "sha256:a8b3cf77b2ad77aec5bf710d1a2589d9117576132af812885cad41e9dede4d4e", url = "https://github.com/kubernetes-sigs/kind/releases/download/v0.31.0/kind-darwin-amd64"}
+"platforms.windows-x64" = { checksum = "sha256:2c3a9ff954de16244380778683cf99e271bfc2fac9c6c4e797e4623c45e59d9d", url = "https://github.com/kubernetes-sigs/kind/releases/download/v0.31.0/kind-windows-amd64"}
+
+[[tools.kubectl]]
+version = "1.35.1"
+backend = "aqua:kubernetes/kubernetes/kubectl"
+"platforms.linux-arm64" = { checksum = "sha256:706256e21a4e9192ee62d1a007ac0bfcff2b0b26e92cc7baad487a6a5d08ff82", url = "https://dl.k8s.io/v1.35.1/bin/linux/arm64/kubectl"}
+"platforms.linux-x64" = { checksum = "sha256:36e2f4ac66259232341dd7866952d64a958846470f6a9a6a813b9117bd965207", url = "https://dl.k8s.io/v1.35.1/bin/linux/amd64/kubectl"}
+"platforms.macos-arm64" = { checksum = "sha256:2b000dded317319b1ebca19c2bc70f772c7aaa0e8962fae2d987ba04dd1a1b50", url = "https://dl.k8s.io/v1.35.1/bin/darwin/arm64/kubectl"}
+"platforms.macos-x64" = { checksum = "sha256:07a04d82bc2de2f5d53dfd81f2109ca864f634a82b225257daa2f9c2db15ccef", url = "https://dl.k8s.io/v1.35.1/bin/darwin/amd64/kubectl"}
+"platforms.windows-x64" = { checksum = "sha256:d2d28ca3440ed94262b9b4bffb30119cfca69ac30b9cad531a08e8ebd9720dd2", url = "https://dl.k8s.io/v1.35.1/bin/windows/amd64/kubectl.exe"}
