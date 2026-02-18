@@ -9,6 +9,10 @@ arg "[name]" help="cluster name" default="local"
 '''
 run = "kind create cluster --name ${usage_name?}"
 
+[tasks.apply]
+description = "Apply k8s manifests"
+run = "kubectl apply --server-side -k k8s/"
+
 [tasks.delete]
 description = "Delete a `kind` cluster"
 usage = '''

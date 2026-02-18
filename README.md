@@ -31,15 +31,14 @@ Create a cluster:
 mise run create
 ```
 
+Apply k8s resource manifests:
+```sh
+mise run apply
+```
+
 Delete a cluster:
 ```sh
 mise run delete
-```
-
-### Apply k8s resources
-
-```sh
-kubectl apply --server-side -k k8s/
 ```
 
 ### ArgoCD
